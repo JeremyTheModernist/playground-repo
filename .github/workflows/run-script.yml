@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-      - uses: actions/checkout@v2
+      # you must first checkout the code before you can execute it.
+      # - uses: actions/checkout@v2
       - name: Run Build Script
-        run: bash ./.github/build.sh
+        run: bash ${GITHUB_WORKSPACE}/.github/build.sh
         shell: bash
