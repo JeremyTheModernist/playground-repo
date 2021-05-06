@@ -11,3 +11,4 @@ jobs:
         run: bash ./.github/build.sh
         shell: bash
       - run: node ./say-hello.js
+      - run: cat say-hello.js
