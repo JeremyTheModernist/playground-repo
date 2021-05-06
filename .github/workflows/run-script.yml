@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
+      - uses: actions/checkout@v2
       - name: Run Build Script
         run: bash ./.github/build.sh
         shell: bash
