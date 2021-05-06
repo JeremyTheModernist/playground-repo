@@ -1,0 +1,19 @@
+name: Run NPM Scripts
+on: [push]
+jobs:
+  run-npm-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install
+      - run: npm Install
+
+      - name: Lint
+      - run: npm run lint
+
+      - name: Build
+      - run: npm run Build
+
+      - name: Test
+      - run: npm test
