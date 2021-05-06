@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Build Script
-        run: ./.github/scripts/hello-world.sh
+        run: ./.github/scripts/build.sh
         shell: bash
