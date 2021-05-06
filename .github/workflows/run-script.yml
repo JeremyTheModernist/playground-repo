@@ -6,7 +6,8 @@ jobs:
     steps:
       - run: pwd
       # you must first checkout the code before you can execute it.
-      # - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Run Build Script
-        run: bash ${GITHUB_WORKSPACE}/.github/build.sh
+        run: bash ./.github/build.sh
         shell: bash
+      - run: node ./say-hello.js
